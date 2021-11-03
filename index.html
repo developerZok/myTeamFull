@@ -7,131 +7,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>options</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>myTeam home</title>
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-
-                <div>
-                    <h2 class="h1 text-center">Movies catalog</h2>
-                </div>
-                <div class="option-left col">
-
-
-                    <!-- inputs -->
-
-                    <form action="POST" enctype="https://echo.htmlacademy.ru/">
-                        <div class="input-group mb-3">
-                            <input type="text" name="all" class="form-control" aria-label="Username"
-                                aria-describedby="basic-addon1" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" name="new" class="form-control" aria-label="Username"
-                                aria-describedby="basic-addon1" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <select class="form-select" id="inputGroupSelect02">
-                                <option selected>All</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="input-group mb-3">
-                            <select class="form-select" id="inputGroupSelect02">
-                                <option selected>Rating (ligh to low)</option>
-                                <option value="1">Rating</option>
-                                <option value="2">Rating</option>
-                                <option value="3">Rating</option>
-                            </select>
-                        </div>
-
-                        <!-- inouts -->
-                        <button class="btn btn-primary w-100 mb-4" type="submit">Button</button>
-                    </form>
-                    <h3 class="h3">Bookmarked movies</h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="card-title">Avengers: infinity var</h6>
-                            <a href="#" class="btn btn-danger">Remove</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="card-title">The avengers</h6>
-                            <a href="#" class="btn btn-danger">Remove</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="card-title">12 Years a Slave</h6>
-                            <a href="#" class="btn btn-danger">Remove</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end off option left -->
-
-                <div class="option__right col-8 position-relative">
-                    <div class="heading">
-                        <h2 class="h5">Search results: 39</h2>
-                    </div>
-                    <div class="alert alert-primary" role="alert">Use the rom on the left to search for a movie</div>
-
-                    <div class="card__box row justify-content-around">
-                        <div class="card" style="width: 21rem;">
-                            <img src="./image/card-img1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Avengers: infinity var</h5>
-                                <p><i class="fas fa-calendar"></i> 2018</p>
-                                <p><i class="fas fa-star text-warning"></i> 8.7</p>
-                                <div>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">watch trailer</button>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">More info</button>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">Bookmark</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 21rem;">
-                            <img src="./image/card-img2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">The avengers</h5>
-                                <p><i class="fas fa-calendar"></i> 2012</p>
-                                <p><i class="fas fa-star text-warning"></i> 8.1</p>
-                                <div>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">watch trailer</button>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">More info</button>
-                                    <button type="button" class="btn btn-outline-primary btn-sm">Bookmark</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end off card -->
-                    <nav class="mt-5 position-absolute start-50 translate-middle-x"
-                        aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
+    <section class="hero__section">
+        <div class="container hero__container">
+            <nav class="navbar navbar-expand-lg navbar-light pt-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./image/myteam.svg" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="./about.html">About</a>
                             </li>
                         </ul>
-                    </nav>
+                        <a href="./contactus.html" class="btn btn-outline-light rounded-pill" role="button"
+                            aria-disabled="true">contact us</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero d-flex justify-content-between">
+                <div class="">
+                    <h1 class="hero__heading text-white">Find the best <span>talent</span></h1>
+                </div>
+                <div class="">
+                    <div class="hero__restangle"></div>
+                    <p class="text-white">Finding the right people and building high performing teams can be hard. Most
+                        companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
                 </div>
             </div>
-
         </div>
     </section>
+    <!-- end off head -->
+    <section class="manage__section">
+        <div class="container manage__container ">
+            <div class="manage__restangle--father">
+
+                <div class="manage__restangle"></div>
+            </div>
+            <div class="manage d-flex justify-content-between">
+
+                <div class="manage__left">
+                    <h2 class="text-white">Build & manage distributed teams like no one else.</h2>
+                </div>
+                <div class="manage__right">
+                    <div class="manage__person d-flex">
+                        <div class="">
+                            <img src="./image/icon-experienced.png" alt="">
+                        </div>
+                        <div class="mx-3">
+                            <h5>Experienced Individuals</h5>
+                            <p class="text-white">Our network is made up of highly experienced professionals who are
+                                passionate about what they
+                                do.</p>
+                        </div>
+                    </div>
+                    <div class="manage__person mt-3 d-flex">
+                        <div class="">
+                            <img src="./image/icon-gear.png" alt="">
+                        </div>
+                        <div class="mx-3">
+                            <h5>Experienced Individuals</h5>
+                            <p class="text-white">Our network is made up of highly experienced professionals who are
+                                passionate about what they
+                                do.</p>
+                        </div>
+                    </div>
+                    <div class="manage__person mt-3 d-flex">
+                        <div class="">
+                            <img src="./image/icon-stat.png" alt="">
+                        </div>
+                        <div class="mx-3">
+                            <h5>Experienced Individuals</h5>
+                            <p class="text-white">Our network is made up of highly experienced professionals who are
+                                passionate about what they
+                                do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end off manage -->
+    <section class="delivering__section">
+        <div class="container delivering__contaier">
+            <div class="delivering">
+                <div class="delivering__head d-flex flex-column align-items-center text-center">
+                    <h2>Delivering real results for top companies. Some of our <span>success stories.</span></h2>
+                </div>
+                <div class="delivering__card d-flex justify-content-between">
+                    <div class="delivering__card--box d-flex flex-column align-items-center text-center">
+                        <p> “The team perfectly fit the specialized skill set required. They focused on the most
+                            essential
+                            features helping us launch the platform eight months faster than planned.”</p>
+                        <p class="kady">Kady Baker</p>
+                        <i>Product Manager at Bookmark</i>
+                        <img class="mt-3" src="./image/user-kady.png" style="width: 62px;" alt="">
+                    </div>
+                    <div class="delivering__card--box d-flex flex-column align-items-center text-center">
+                        <p>“We needed to automate our entire onboarding process. The team came in and built out the
+                            whole journey. Since going live, user retention has gone through the roof!”</p>
+                        <p class="kady">Aiysha Reese</p>
+                        <i>Founder of Manage</i>
+                        <img class="mt-3" src="./image/user-aiysha.png" style="width: 62px;" alt="">
+                    </div>
+                    <div class="delivering__card--box d-flex flex-column align-items-center text-center">
+                        <p>“Amazing. Our team helped us build an app that delivered a new experience for hiring a
+                            physio. The launch was an instant success with 100k downloads in the first month.”</p>
+                        <p class="kady">Arthur Clarke</p>
+                        <i>Co-founder of MyPhysio</i>
+                        <img class="mt-3" src="./image/user-arthur.png" style="width: 62px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ready__section">
+        <div class="container ready__container">
+            <div class="ready d-flex justify-content-around">
+                <h2>Ready to get started?</h2>
+                <button type="button" class="btn btn-outline-dark rounded-pill">contact us</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer__section">
+        <div class="container footer__container">
+            <div class="footer d-flex justify-content-between pt-5 pb-5">
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <div class="footer__logo">
+                        <img src="./image/myteam.svg" alt="">
+                    </div>
+                    <div class="footer__link d-flex">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <p>987 Hillcrest Lane</p>
+                    <p>Irvine, CA</p>
+                    <p>California 92714</p>
+                    <p>Call Us : 949-833-7432</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <a href="https://www.instagram.com"><img src="./image/facebook.png" alt=""></a>
+                    <a class="footer__insta mx-30" href="https://www.pinterest.com/"><img src="./image/pinterest.png"
+                            alt=""></a>
+                    <a class="footer__insta mx-30" href="https://www.instagram.com"><img src="./image/twitter.png"
+                            alt=""></a>
+                    <p class="copyright">Copyright 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/bootstrap.min.js"></script>
 </body>
 
